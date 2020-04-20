@@ -1,7 +1,7 @@
 # Battle-Tank-Course
 I am learning here how to make simple tank game!
 
-GCC:
+Game Desing Guide (GDD):
 Concept:
 The game is about tank fight. On the simple and clear battlefied there are two or more tanks. One of them is controlled by player. Another one is AI controlled. Tanks are moving around and trying to hit each other with projectilles.
 
