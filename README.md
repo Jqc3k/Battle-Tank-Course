@@ -11,4 +11,4 @@ Tank hit several times is destroyed. The game is over when there it is only one 
 Requirements:
 Tank meshes with animation, terrain, engine sound, projectile system, moving system, AI.
 
-p
+Settin up repository.
