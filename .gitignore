@@ -82,4 +82,7 @@ DerivedDataCache/*
 */DerivedDataCache/*
 */Saved/*
 */Content/StarterContent/*
-
+*/Textures/*
+*/Fonts/*
+TankGame/Content/Textures/
+TankGame/Content/Fonts/
