@@ -22,6 +22,20 @@ void ATankAIController::BeginPlay()
     }
 }
 
+// Called every frame
+void ATankAIController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+    // Move towards player
+
+    // Aim towards the player
+    GetControlledTank()->AimAt(GetPlayerTank()->GetActorLocation());
+
+    // Fire if ready
+
+}
+
 // return a pawn that a player is currently possesing (AI possessing)
 ATank* ATankAIController::GetControlledTank() const
 {

@@ -22,6 +22,7 @@ public:
 
 	// it searches for function virtual method BeginPlay() at the parent classes and change it in this class
 	void BeginPlay() override;
+	void Tick(float DeltaTime) override;
 	
 	UPROPERTY()
 	ATank* PossesedTank = nullptr;

@@ -3,6 +3,9 @@
 #pragma once
 
 #include "Tank.h"
+#include "Engine/World.h"
+#include "Engine/EngineTypes.h"
+#include "CollisionQueryParams.h"
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
 #include "MyPlayerController2.generated.h"
@@ -25,6 +28,7 @@ private:
 	void AimTowardsCrosshair();
 	bool GetSightRayHitLocation(FVector& outHitLocation) const;
 	bool GetLookDirection(FVector2D ScreenLocation, FVector& LookDirection) const; // not changing any member variables
+	bool GetLookVectorHitLocation(FVector& outHitLocation) const;
 
 	UPROPERTY(EditAnywhere)
 	float CrossHairXLocation = 0.5;
@@ -34,4 +38,23 @@ private:
 
 	UPROPERTY()
 	ATank* PossesedTank = nullptr;
+
+	UPROPERTY(EditAnywhere)
+	float LineTraceRange = 1000000.f; // in cm
+
+	// UPROPERTY()
+	// FHitResult HitResult;
+
+	// UPROPERTY()
+	// FVector start;
+
+	// UPROPERTY()
+	// FVector end;
+
+	// UPROPERTY()
+	// FCollisionQueryParams QueryParam;
+
+	// UPROPERTY()
+	// FCollisionResponseParams ResponseParam;
+
 };
